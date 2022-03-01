@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+
+:root {
+  --white: #fff;
+  --black: #1c2b2d;
+  --blue: #31326f;
+  --light-blue: #005490;
+  --color-primary: #9d0191;
+  --color-sec: #db6400;
+  --grey: #eee;
+  --dark-grey: #222831;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #010711cb;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-image: url(images/markus-spiske-iar-afB0QQw-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* css */
+
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  /* background-color: var(--light-blue); */
+  backdrop-filter: blur(10px);
+  padding: 2rem;
+  width: 40rem;
+  border-radius: 5px;
+}
+
+h1 {
+  font-size: 3rem;
+  color: var(--white);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.form-field {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  color: var(--white);
+  border-bottom: 1px solid var(--grey);
+  font-size: 1.6rem;
+}
+
+.form-field label {
+  cursor: pointer;
+}
+
+.p-header {
+  position: relative;
+}
+
+.p-header input {
+    width:100%;
+    border:2px solid #aaa;
+    border-radius:4px;
+    margin:8px 0;
+    outline:none;
+    padding:8px;
+    box-sizing:border-box;
+    transition:.3s;
+    color: wheat;
+}
+.p-header input[type=text]:focus{
+    border-color:dodgerBlue;
+    box-shadow:0 0 8px 0 dodgerBlue;
+  }
+.p-header button,
+.form-field input[type="number"] {
+  background-color: var(--white);
+  padding: 3px 5px;
+  outline: none;
+  border: none;
+  border-radius: 3px 0 0 0;
+  font-size: 1.4rem;
+}
+
+.p-header button {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+}
+
+#submit {
+    width: 100%;
+    padding: 1.5rem;
+    margin-top: 1rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(30px);
+    color: rgba(255, 255, 255, 0.8);
+    border-radius: 3px;
+    transition: all 0.3s;
+  }
+
+
+#submit:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+.badge-displayBadge{
+    color: #090909;
+    padding: 0.3em 0.9em;
+    font-size: 10px;
+    border-radius: 0.5em;
+    background: #e8e8e8;
+    border: 1px solid #e8e8e8;
+    transition: all .3s;
+    
+}
+.copy {
+    padding: 0.3em 0.9em;
+    font-size: 10px;
+    border-radius: 0.5em;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 1px solid #070707;
+    transition: all .3s;
+    
+   }
+   
+.p-length {
+    width:100%;
+    border:2px solid #aaa;
+    border-radius:4px;
+    margin:8px 0;
+    outline:none;
+    padding:8px;
+    box-sizing:border-box;
+    transition:.3s;
+    color: wheat;
+}
